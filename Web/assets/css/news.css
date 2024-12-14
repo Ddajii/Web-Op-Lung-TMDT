@@ -1,0 +1,30 @@
+.content {
+    margin-top: 5vh; /* Khoảng cách từ menu đến nội dung */
+    padding: 20px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Cắt ảnh đẹp */
+    border-radius: 10px; /* Tạo góc bo tròn */
+}
+
+/* Tiêu đề và nội dung bài viết */
+
+
+.card-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.card-text small {
+    color: #888;
+    font-size: 0.9rem;
+}
+.card-title {
+    font-size: 1.2rem;
+    color: #007bff; /* Màu xanh */
+  }
+  

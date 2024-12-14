@@ -1,0 +1,83 @@
+@media screen and (max-width: 600px) { 
+table#cart tbody td .form-control { 
+width:20%; 
+display: inline !important;
+} 
+ 
+.actions .btn { 
+width:36%; 
+margin:1.5em 0;
+} 
+ 
+.actions .btn-info { 
+float:left;
+} 
+ 
+.actions .btn-danger { 
+float:right;
+} 
+ 
+table#cart thead {
+display: none;
+} 
+ 
+table#cart tbody td {
+display: block;
+padding: .6rem;
+min-width:320px;
+} 
+ 
+table#cart tbody tr td:first-child {
+background: #333;
+color: #fff;
+} 
+ 
+table#cart tbody td:before { 
+content: attr(data-th);
+font-weight: bold; 
+display: inline-block;
+width: 8rem;
+} 
+ 
+table#cart tfoot td {
+display:block;
+} 
+table#cart tfoot td .btn {
+display:block;
+}
+}
+/* Tăng khoảng cách và căn giữa tiêu đề modal */
+.modal-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Tăng độ nổi bật cho nút "Xác nhận thanh toán" */
+.modal-footer .btn-primary {
+  background-color: #007bff; /* Bootstrap primary color */
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.modal-footer .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Canh đều khoảng cách trong form */
+.modal-body form .form-control {
+  border-radius: 5px;
+}
+
+/* Làm nổi bật tổng tiền trong modal */
+#modalTotalPrice {
+  font-weight: bold;
+  color: #dc3545; /* Bootstrap danger color (đỏ) */
+  font-size: 1.2rem;
+}
+
+/* Căn giữa nút close (nếu muốn tùy chỉnh thêm) */
+.btn-close {
+  margin-top: -10px;
+}

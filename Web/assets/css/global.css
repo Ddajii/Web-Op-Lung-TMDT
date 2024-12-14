@@ -1,0 +1,154 @@
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.marquee{
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  background-color: #5492ef;
+  color: white;
+  font-size: 20px;
+  height: 30px;
+
+}
+.marquee p{
+  display: inline-block;
+  padding-left: 40%;
+  animation: marquee 15s linear infinite;
+  font-weight: bold;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* Giỏ hàng */
+.cart-badge {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.65rem;
+  font-weight: bold;
+  position: absolute;
+  top: -11px;
+  right: -10px;
+}
+/* Carousel */
+/* Đặt chiều cao và căn chỉnh cho carousel */
+.carousel-inner img {
+  height: 235px; /* Giống với chiều cao trong hình mẫu */
+  object-fit: cover; /* Giữ ảnh không bị méo */
+}
+
+/* Đặt chiều cao và chiều rộng cho các banner */
+.banner-img {
+  height: 115px; /* Chiều cao banner */
+  object-fit: cover; /* Đảm bảo ảnh đầy đủ nội dung */
+  width: 100%;
+}
+
+/* Điều chỉnh kích thước container */
+.container {
+  max-width: 1000px; /* Giới hạn chiều rộng */
+}
+
+/* Giảm padding giữa các phần */
+.row > .col-12 {
+  padding: 0; /* Loại bỏ khoảng cách dư thừa giữa các banner */
+}
+/* Card */
+.card img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  display: block;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card:hover i {
+  transform: scale(1.2);
+  color: #ffffff; /* Đổi màu khi hover */
+}
+/* Footer Styling */
+footer {
+  background-color: #343a40; /* Màu nền tối */
+  color: #ffffff; /* Màu chữ trắng */
+  padding: 20px 0; /* Khoảng cách trên và dưới */
+}
+
+footer h5 {
+  color: #f8f9fa; /* Màu chữ cho tiêu đề */
+  font-size: 18px; /* Kích thước chữ lớn hơn một chút */
+  font-weight: bold; /* Chữ đậm */
+  margin-bottom: 15px; /* Khoảng cách dưới tiêu đề */
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 1.6; /* Dòng thoáng hơn */
+  margin: 0; /* Loại bỏ khoảng cách mặc định */
+}
+
+footer a {
+  color: #f8f9fa; /* Màu chữ cho link */
+  margin-right: 15px; /* Khoảng cách giữa các link */
+  font-size: 20px; /* Kích thước biểu tượng */
+  transition: color 0.3s ease-in-out; /* Hiệu ứng mượt khi hover */
+}
+
+footer a:hover {
+  color: #0d6efd; /* Màu xanh lam nhạt khi hover */
+}
+
+footer .col-md-4 {
+  margin-bottom: 20px; /* Khoảng cách giữa các cột khi màn hình nhỏ */
+}
+
+footer .text-center {
+  margin-top: 20px;
+  color: #cccccc; /* Màu xám nhạt cho phần text trung tâm */
+  font-size: 12px;
+}
+
+/* Icon hover effect */
+footer a.facebook:hover {
+  color: #1452d7; /* Màu Facebook */
+}
+
+footer a.instagram:hover {
+  color: #e23583; /* Màu Instagram */
+}
+
+footer a.youtube:hover {
+  color: #ff0000; /* Màu YouTube */
+}
+
+/* Hiệu ứng toast */
+.toast {
+  animation: fadeInOut 3.5s ease forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  10%, 90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}

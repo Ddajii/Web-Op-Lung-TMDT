@@ -1,0 +1,18 @@
+project/
+├── index.html          # Trang chủ
+├── product.html        # Trang sản phẩm
+├── cart.html           # Trang giỏ hàng
+├── checkout.html       # Trang thanh toán
+├── assets/             # Thư mục chứa tài nguyên
+│   ├── css/            # Thư mục CSS
+│   │   ├── global.css  # CSS chung
+│   │   ├── home.css    # CSS trang chủ
+│   │   ├── product.css # CSS trang sản phẩm
+│   │   ├── cart.css    # CSS trang giỏ hàng
+│   ├── js/             # Thư mục JS
+│   │   ├── global.js   # JS dùng chung
+│   │   ├── product.js  # JS riêng cho trang sản phẩm
+│   │   ├── cart.js     # JS riêng cho trang giỏ hàng
+│   ├── images/         # Thư mục hình ảnh
+│       ├── logo.png
+│       ├── product1.jpg

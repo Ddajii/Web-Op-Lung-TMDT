@@ -1,0 +1,169 @@
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  background-color: #5492ef;
+  color: white;
+  font-size: 20px;
+  height: 30px;
+}
+.marquee p {
+  display: inline-block;
+  padding-left: 40%;
+  animation: marquee 15s linear infinite;
+  font-weight: bold;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* Giỏ hàng */
+.cart-badge {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.65rem;
+  font-weight: bold;
+  position: absolute;
+  top: -11px;
+  right: -10px;
+}
+iframe {
+  border-radius: 10px;
+}
+.contact-container .row {
+  display: flex; /* Đảm bảo các cột co giãn đều */
+  flex-wrap: wrap; /* Cho phép các cột xuống dòng nếu thiếu không gian */
+}
+
+.contact-container iframe {
+  max-width: 100%; /* Giới hạn chiều rộng của bản đồ */
+  height: auto; /* Tự động co chiều cao */
+}
+
+.contact-container .col-md-7,
+.contact-container .col-md-5 {
+  padding: 10px; /* Thêm khoảng cách cho các cột */
+  box-sizing: border-box; /* Kích thước tính luôn padding và border */
+}
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* Tỷ lệ 16:9 */
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+@media (max-width: 768px) {
+    .contact-container {
+      margin-top: 20px;
+    }
+  
+    .contact-container iframe {
+      width: 100%;
+      height: 200px;
+    }
+  
+    .contact-container form {
+      margin-top: 20px;
+    }
+  
+    .nav-item.dropdown .dropdown-menu {
+      background-color: #007bff;
+    }
+  
+    .nav-item.dropdown .dropdown-menu .dropdown-item {
+      color: white;
+    }
+  }
+  
+/* Footer Styling */
+footer {
+  background-color: #343a40; /* Màu nền tối */
+  color: #ffffff; /* Màu chữ trắng */
+  padding: 20px 0; /* Khoảng cách trên và dưới */
+}
+
+footer h5 {
+  color: #f8f9fa; /* Màu chữ cho tiêu đề */
+  font-size: 18px; /* Kích thước chữ lớn hơn một chút */
+  font-weight: bold; /* Chữ đậm */
+  margin-bottom: 15px; /* Khoảng cách dưới tiêu đề */
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 1.6; /* Dòng thoáng hơn */
+  margin: 0; /* Loại bỏ khoảng cách mặc định */
+}
+
+footer a {
+  color: #f8f9fa; /* Màu chữ cho link */
+  margin-right: 15px; /* Khoảng cách giữa các link */
+  font-size: 20px; /* Kích thước biểu tượng */
+  transition: color 0.3s ease-in-out; /* Hiệu ứng mượt khi hover */
+}
+
+footer a:hover {
+  color: #0d6efd; /* Màu xanh lam nhạt khi hover */
+}
+
+footer .col-md-4 {
+  margin-bottom: 20px; /* Khoảng cách giữa các cột khi màn hình nhỏ */
+}
+
+footer .text-center {
+  margin-top: 20px;
+  color: #cccccc; /* Màu xám nhạt cho phần text trung tâm */
+  font-size: 12px;
+}
+
+/* Icon hover effect */
+footer a.facebook:hover {
+  color: #1452d7; /* Màu Facebook */
+}
+
+footer a.instagram:hover {
+  color: #e23583; /* Màu Instagram */
+}
+
+footer a.youtube:hover {
+  color: #ff0000; /* Màu YouTube */
+}
+
+/* Hiệu ứng toast */
+.toast {
+  animation: fadeInOut 3.5s ease forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  10%,
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}

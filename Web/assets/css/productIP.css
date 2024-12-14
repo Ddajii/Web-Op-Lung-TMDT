@@ -1,0 +1,114 @@
+/* Filter Bar */
+.container.mb-3 {
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các phần tử xuống dòng nếu cần */
+    gap: 15px; /* Khoảng cách giữa các phần tử */
+    justify-content: space-between; /* Dãn đều các phần tử trên mỗi dòng */
+  }
+  /* Cải tiến khi select được focus */
+
+  /* Cải tiến khoảng cách giữa các phần tử khi thu nhỏ */
+  .container.mb-3 > .filter-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+    justify-content: space-evenly; /* Dãn đều các phần tử trong nhóm */
+  }
+  
+  /* Các nhóm lọc con (span, a, label, select) */
+  .container.mb-3 .filter-group span,
+  .container.mb-3 .filter-group a,
+  .container.mb-3 .filter-group label,
+  .container.mb-3 .filter-group select {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  /* Cải tiến phần các link trong nhóm lọc */
+  .container.mb-3 a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .container.mb-3 a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Cải tiến checkbox */
+  .container.mb-3 input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* Cải tiến select */
+  .container.mb-3 select {
+    border-radius: 30px;
+    border: 1px solid #007bff;
+    padding: 5px 10px;
+    font-size: 1rem;
+    background-color: #fff;
+    flex-shrink: 0; /* Không cho phần tử thu nhỏ */
+    margin-top: 5px;
+  }
+  
+  /* Cải tiến các nút trong .btn-group */
+  .container.mb-3 .btn-group {
+    flex-shrink: 0;
+  }
+  
+  .container.mb-3 .btn-group button {
+    border-radius: 50px;
+    background-color: #fff;
+    border: 1px solid #007bff;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .container.mb-3 .btn-group button:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Cải tiến phần strong */
+  .container.mb-3 strong {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 1.2rem;
+    flex-shrink: 0; /* Không cho phần tử thu nhỏ */
+  }
+  
+  /* Responsive design for filter bar */
+  @media (max-width: 768px) {
+    .container.mb-3 {
+      padding: 15px;
+    }
+  
+    .container.mb-3 strong {
+      font-size: 1.1rem;
+    }
+  
+    .container.mb-3 span {
+      font-size: 0.9rem;
+    }
+  
+    .container.mb-3 .btn-group button {
+      font-size: 0.9rem;
+      padding: 5px 15px;
+    }
+  
+    .container.mb-3 a {
+      font-size: 0.9rem;
+    }
+  
+    .container.mb-3 select {
+      font-size: 0.9rem;
+    }
+  }
+  
