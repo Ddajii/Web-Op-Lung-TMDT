@@ -167,3 +167,12 @@ footer a.youtube:hover {
     transform: translateY(20px);
   }
 }
+.contact-container .row {
+  height: auto; /* Chiều cao tự động cho hàng */
+}
+
+.contact-container .col-md-7 iframe {
+  aspect-ratio: 3 / 1; /* Điều chỉnh chiều dài lớn hơn chiều cao */
+  width: 100%;
+  border: 0;
+}

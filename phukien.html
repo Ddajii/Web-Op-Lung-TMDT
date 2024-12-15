@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="icon" href="/Web/assets/img/Logo.png" type="image/x-icon" />
+    <!-- Bootstrap 5.1.3 - CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Font awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- CSS Global -->
+    <link rel="stylesheet" href="/Web/assets/css/global.css" />
+    <!-- css prod ip -->
+    <link rel="stylesheet" href="/Web/assets/css/productIP.css" />
+  </head>
+  <body>
+    <div class="marquee">
+      <p><i>TƯNG BỪNG KHAI TRƯƠNG - GIẢM 30% CHO TẤT CẢ CÁC SẢN PHẨM KHI NHẬP MÃ "NHOM2"</i></p>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-primary justify-content-between px-5">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="/Web/assets/img/Logo.png" alt="" width="80" height="80" />
+        <span class="text-light fw-bold">Case Store</span>
+      </a>
+      <form class="d-flex align-items-center w-50">
+        <input
+          class="form-control me-2 rounded-pill"
+          type="search"
+          placeholder="Search..."
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-light rounded-pill" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+
+      <!-- Cart Section -->
+      <a
+        href="cart.html"
+        class="d-flex align-items-center position-relative text-decoration-none text-dark cart-container"
+      >
+        <!-- Cart Icon -->
+        <div class="position-relative">
+          <i class="fas fa-shopping-cart fa-lg text-light"></i>
+          <span class="cart-badge">0</span>
+        </div>
+
+        <!-- Cart Text -->
+        <span class="ms-2 text-light">Giỏ hàng</span>
+      </a>
+      <div class="dropdown bg-primary">
+        <button
+          class="btn btn-outline dropdown-toggle"
+          id="languageDropdown"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <span class="text-light">VN</span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+          <li><a class="dropdown-item" href="#">Vietnamese</a></li>
+          <li><a class="dropdown-item" href="#">English</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Nav 2 -->
+    <nav class="navbar navbar-expand navbar-dark bg-primary navbar-bottom">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav2"
+          aria-controls="navbarNav2"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav2">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light fw-bold" href="index.html"
+                >TRANG CHỦ</a
+              >
+            </li>
+            <li class="nav-item dropdown bg-primary">
+              <a
+                class="nav-link dropdown-toggle text-light fw-bold"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                DANH MỤC SẢN PHẨM
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="productIP.html">Ốp IPhone</a>
+                <a class="dropdown-item" href="productSS.html">Ốp Samsung</a>
+                <a class="dropdown-item" href="phukien.html">Phụ Kiện</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-bold" href="news.html"
+                >TIN TỨC</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-bold" href="contact.html"
+                >LIÊN HỆ</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Product -->
+    <div class="container mb-3" style="max-width: 1200px">
+      <div>
+        <span>Chọn Mức giá:</span>
+        <a href="#" class="text-primary mx-1">40.000đ - 45.000đ</a> |
+        <a href="#" class="text-primary mx-1">45.000đ - 50.000đ</a>
+        <div class="btn-group"></div>
+      </div>
+      <div>
+        <label class="me-2"><input type="checkbox" /> Mới</label>
+        <label class="me-2"><input type="checkbox" /> Nổi Bật</label>
+        <label class="me-2"><input type="checkbox" /> Bán chạy</label>
+      </div>
+      <div>
+        <select class="form-select form-select-sm" style="width: auto">
+          <option selected>Sắp xếp</option>
+          <option value="1">Giá tăng dần</option>
+          <option value="2">Giá giảm dần</option>
+          <option value="3">Mới nhất</option>
+          <option value="4">Bán chạy nhất</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Product List -->
+    <div class="container mt-3" style="max-width: 1200px">
+      <hr />
+      <h3 class="text-primary text-center fw-bold">PHỤ KIỆN TRANG TRÍ</h3>
+      <hr />
+      <div class="row">
+        <div>
+          <h4 class="text-primary">Dây Treo Điện Thoại</h4>
+          <hr />
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card">
+            <img
+              src="https://cbu01.alicdn.com/img/ibank/O1CN01yVQfsJ1PMM2RqouOH_!!2215451221826-0-cib.jpg"
+              class="card-img-top"
+              alt="Product 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary">Dây Nơ</h5>
+              <p class="card-text fw-bold">Giá: 17.000 đ</p>
+
+              <a href="#" class="btn btn-danger add-to-cart-btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card">
+            <img
+              src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lti6gqq8vvnx17"
+              class="card-img-top"
+              alt="Product 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary">Dây Treo Đơn Giản</h5>
+              <p class="card-text fw-bold">Giá: 9.000 đ</p>
+
+              <a href="#" class="btn btn-danger add-to-cart-btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card">
+            <img
+              src="https://cf.shopee.vn/file/0da281437c0b4ae2acd7fb5ce7900906"
+              class="card-img-top"
+              alt="Product 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary">Dây Mèo Thần Tài</h5>
+              <p class="card-text fw-bold">Giá: 39.999 đ</p>
+
+              <a href="#" class="btn btn-danger add-to-cart-btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card">
+            <img
+              src="https://down-vn.img.susercontent.com/file/sg-11134201-7rd56-lwdyf693ila0f2"
+              class="card-img-top"
+              alt="Product 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary">Dây Bánh Dâu</h5>
+              <p class="card-text fw-bold">Giá: 26.000 đ</p>
+
+              <a href="#" class="btn btn-danger add-to-cart-btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div>
+        <h4 class="text-primary">Bảo Vệ Dây Sạc</h4>
+        <hr />
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card">
+            <img
+              src="https://cf.shopee.vn/file/2b8e8a4e7ff41fd442af18179c313d2f"
+              class="card-img-top"
+              alt="Product 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary">Nút Bảo Vệ Cáp Hình Thú..</h5>
+              <p class="card-text fw-bold">Giá: 6.999 đ</p>
+              <a href="#" class="btn btn-danger add-to-cart-btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card">
+            <img
+              src="https://cf.shopee.vn/file/f1433b946231ce8b193373332811eec0"
+              class="card-img-top"
+              alt="Product 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-primary">
+                Bộ Bảo Vệ Cáp Và Củ Sạc...
+              </h5>
+              <p class="card-text fw-bold">Giá: 36.000 đ</p>
+              <a href="#" class="btn btn-danger add-to-cart-btn">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <div>
+        <h4 class="text-primary">Set Nguyên Liệu Trang Trí Ốp Lưng</h4>
+        <hr />
+    </div>
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="card">
+          <img
+            src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-llu6bmnijf8ff0"
+            class="card-img-top"
+            alt="Product 1"
+          />
+          <div class="card-body">
+            <h5 class="card-title text-primary">Set Full Đồ Ăn</h5>
+            <p class="card-text fw-bold">Giá: 49.000 đ</p>
+            <a href="#" class="btn btn-danger add-to-cart-btn">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card">
+          <img
+            src="https://down-vn.img.susercontent.com/file/sg-11134201-22110-7iugodw4a6jv09"
+            class="card-img-top"
+            alt="Product 2"
+          />
+          <div class="card-body">
+            <h5 class="card-title text-primary">
+              Set Socola
+            </h5>
+            <p class="card-text fw-bold">Giá: 49.000 đ</p>
+            <a href="#" class="btn btn-danger add-to-cart-btn">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card">
+          <img
+            src="https://down-vn.img.susercontent.com/file/sg-11134201-22110-3flwyxvu23jve5"
+            class="card-img-top"
+            alt="Product 2"
+          />
+          <div class="card-body">
+            <h5 class="card-title text-primary">
+              Set Full Trái Cây
+            </h5>
+            <p class="card-text fw-bold">Giá: 49.000 đ</p>
+            <a href="#" class="btn btn-danger add-to-cart-btn">Add to cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="fw-bold text-primary">Address</h5>
+            <p>THU DUC - TP.HCM - VIETNAM</p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold text-primary">Contacts</h5>
+            <p>Phone: 1900 6789</p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold text-primary">Follow us</h5>
+            <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy; <span id="currentYear"></span></p>
+            <script>
+              document.getElementById("currentYear").textContent =
+                new Date().getFullYear();
+            </script>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+  <script src="/Web/assets/js/index.js"></script>
+</html>

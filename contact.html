@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="icon" href="/Web/assets/img/Logo.png" type="image/x-icon" />
+    <!-- Bootstrap 5.1.3 - CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Font awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- CSS Global -->
+    <link rel="stylesheet" href="/Web/assets/css/global.css" />
+    <!-- CSS contact -->
+    <link rel="stylesheet" href="/Web/assets/css/contact.css" />
+  </head>
+  <body>
+    <div class="marquee">
+      <p><i>TƯNG BỪNG KHAI TRƯƠNG - GIẢM 30% CHO TẤT CẢ CÁC SẢN PHẨM KHI NHẬP MÃ "NHOM2"</i></p>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-primary justify-content-between px-5">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="/Web/assets/img/Logo.png" alt="" width="80" height="80" />
+        <span class="text-light fw-bold">Case Store</span>
+      </a>
+      <form class="d-flex align-items-center w-50">
+        <input
+          class="form-control me-2 rounded-pill"
+          type="search"
+          placeholder="Search..."
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-light rounded-pill" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+
+      <!-- Cart Section -->
+      <a
+        href="cart.html"
+        class="d-flex align-items-center position-relative text-decoration-none text-dark cart-container"
+      >
+        <!-- Cart Icon -->
+        <div class="position-relative">
+          <i class="fas fa-shopping-cart fa-lg text-light"></i>
+          <span class="cart-badge">0</span>
+        </div>
+
+        <!-- Cart Text -->
+        <span class="ms-2 text-light">Giỏ hàng</span>
+      </a>
+      <div class="dropdown bg-primary">
+        <button
+          class="btn btn-outline dropdown-toggle"
+          id="languageDropdown"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <span class="text-light">VN</span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+          <li><a class="dropdown-item" href="#">Vietnamese</a></li>
+          <li><a class="dropdown-item" href="#">English</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Nav 2 -->
+    <nav class="navbar navbar-expand navbar-dark bg-primary navbar-bottom">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav2"
+          aria-controls="navbarNav2"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav2">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light fw-bold" href="index.html"
+                >TRANG CHỦ</a
+              >
+            </li>
+            <li class="nav-item dropdown bg-primary">
+              <a
+                class="nav-link dropdown-toggle text-light fw-bold"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                DANH MỤC SẢN PHẨM
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="productIP.html">Ốp IPhone</a>
+                <a class="dropdown-item" href="productSS.html">Ốp Samsung</a>
+                <a class="dropdown-item" href="phukien.html">Phụ Kiện</a>
+
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-bold" href="news.html"
+                >TIN TỨC</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-bold" href="contact.html"
+                >LIÊN HỆ</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br />
+    <!-- Liên hệ -->
+    <div class="container contact-container">
+      <div class="row g-3">
+        <!-- Bản đồ -->
+        <div class="col-md-7">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.070910191742!2d106.77992637485853!3d10.882211289273073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d89aad780e49%3A0x54542761d4c22175!2zS8O9IHTDumMgeMOhIEtodSBCIC0gxJDhuqFpIGjhu41jIFF14buRYyBnaWEgVFAuSENN!5e0!3m2!1svi!2s!4v1734171081927!5m2!1svi!2s"
+            class="w-100"
+            style="border: 0; aspect-ratio: 16 / 9;" <!-- Đặt tỉ lệ khung 16:9 -->
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+        
+
+        <!-- Form liên hệ -->
+        <div class="col-md-5">
+          <form>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Họ tên *"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="tel"
+                class="form-control"
+                placeholder="Số điện thoại *"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="E-mail *"
+                required
+              />
+            </div>
+            <!-- Radio group -->
+            <div class="mb-3 radio-group">
+              <label>
+                <input type="radio" name="contactType" checked /> Tin nhắn
+              </label>
+              <label>
+                <input type="radio" name="contactType" /> Than phiền
+              </label>
+              <label> <input type="radio" name="contactType" /> Tư vấn </label>
+              <label> <input type="radio" name="contactType" /> Khác </label>
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Tiêu đề *"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                rows="5"
+                placeholder="Nội dung *"
+                required
+              ></textarea>
+            </div>
+            <div class="text-end">
+              <button type="submit" class="btn btn-primary">Gửi</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="fw-bold text-primary">Address</h5>
+            <p>THU DUC - TP.HCM - VIETNAM</p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold text-primary">Contacts</h5>
+            <p>Phone: 1900 6789</p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold text-primary">Follow us</h5>
+            <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy; <span id="currentYear"></span></p>
+            <script>
+              document.getElementById("currentYear").textContent =
+                new Date().getFullYear();
+            </script>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+</html>

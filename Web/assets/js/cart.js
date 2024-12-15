@@ -77,9 +77,9 @@ function applyDiscount() {
   if (discountCode === "NHOM2") {
     const totalElement = document.getElementById("total-price");
     const currentTotal = parseInt(totalElement.textContent.replace(/[^0-9]/g, ""));
-    const discountedTotal = currentTotal * 0.5; // Giảm 50%
+    const discountedTotal = currentTotal * 0.3; // Giảm 30%
     totalElement.textContent = discountedTotal.toLocaleString() + " đ";
-    discountMessage.textContent = "Mã giảm giá được áp dụng! Giảm 50% cho đơn hàng!";
+    discountMessage.textContent = "Mã giảm giá được áp dụng! Giảm 30% cho đơn hàng!";
   } else {
     discountMessage.textContent = "Mã giảm giá không hợp lệ!";
   }
