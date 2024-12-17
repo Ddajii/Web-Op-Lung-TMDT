@@ -141,11 +141,10 @@
 .product-details .btn-secondary:hover {
   background-color: #0056b3;
 }
-..carousel-inner img {
+.carousel-inner img {
   width: 100%;
-  height: auto; /* hoặc bạn có thể sử dụng aspect-ratio */
-  aspect-ratio: 1 / 1; /* Tỷ lệ 1:1 */
-  object-fit: cover; /* Cố định kích thước hình ảnh */
+  max-height: 500px; /* Giới hạn chiều cao */
+  object-fit: cover;
 }
 
 /* Footer Styling */

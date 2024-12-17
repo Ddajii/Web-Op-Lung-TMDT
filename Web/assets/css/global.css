@@ -3,9 +3,14 @@
   justify-content: center;
   gap: 50px;
 }
-.navbar-nav .nav-item:hover{
-  border-bottom: #ffffff 1px solid;
+.navbar-nav .nav-item {
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
 }
+.navbar-nav .nav-item:hover{
+  border-bottom: 2px solid #ffffff;
+}
+
 .marquee{
   overflow: hidden;
   white-space: nowrap;

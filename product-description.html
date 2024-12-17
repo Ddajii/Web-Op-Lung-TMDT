@@ -23,7 +23,12 @@
   </head>
   <body>
     <div class="marquee">
-      <p><i>TƯNG BỪNG KHAI TRƯƠNG - GIẢM 30% CHO TẤT CẢ CÁC SẢN PHẨM KHI NHẬP MÃ "NHOM2"</i></p>
+      <p>
+        <i
+          >TƯNG BỪNG KHAI TRƯƠNG - GIẢM 30% CHO TẤT CẢ CÁC SẢN PHẨM KHI NHẬP MÃ
+          "NHOM2"</i
+        >
+      </p>
     </div>
     <!-- Navbar -->
     <nav class="navbar navbar-light bg-primary justify-content-between px-5">
@@ -109,7 +114,6 @@
                 <a class="dropdown-item" href="productIP.html">Ốp IPhone</a>
                 <a class="dropdown-item" href="productSS.html">Ốp Samsung</a>
                 <a class="dropdown-item" href="phukien.html">Phụ Kiện</a>
-
               </div>
             </li>
             <li class="nav-item">
@@ -147,13 +151,6 @@
               <div class="carousel-item">
                 <img
                   src="https://hasan.vn/Upload/Admin/Product/OLI14PROROD/Op-lung-iPhone-14-Pro-RINGKE-Onyx-Design_face.jpg"
-                  class="d-block w-100"
-                  alt="Product Image"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="https://hasan.vn/Upload/Admin/Product/OLI14PROMAXROD/Op-lung-iPhone-14-Promax-RINGKE-Onyx-Design_face.jpg"
                   class="d-block w-100"
                   alt="Product Image"
                 />
@@ -256,7 +253,7 @@
               </button>
             </div>
             <button class="btn btn-danger me-2">Thêm vào giỏ hàng</button>
-            <button class="btn btn-primary">Mua ngay</button>
+            <button class="btn btn-primary" id="buyNowButton">Mua ngay</button>
           </div>
           <br />
           <hr />
@@ -272,7 +269,15 @@
               Sản phẩm tương thích với công nghệ sạc không dây Magsafe và được
               thiết kế để sử dụng thuận tiện với các dòng iPhone mới nhất.
             </p>
-            <p>Chứng nhận chống sốc với công nghệ đệm khí® hàng đầu thế giới và nút bấm được bảo vệ và bấm rất nhạy. Thiết kế tỉ mỉ từng nút bấm, cụm camera chính xác đến từng mm mang lại độ thẩm mỹ cao. Thiết kế nâng màn hình và lens camera có viền bezels lên khỏi bề mặt phẳng tránh bễ vỡ, trầy xước, hao mòn. Thiết kế vị trí xỏ dây Duo-QuikCatch ở hai bên cạnh ốp giúp dễ dàng xỏ dây đeo tay hoặc dây đeo cổ tiện dụng. </p>
+            <p>
+              Chứng nhận chống sốc với công nghệ đệm khí® hàng đầu thế giới và
+              nút bấm được bảo vệ và bấm rất nhạy. Thiết kế tỉ mỉ từng nút bấm,
+              cụm camera chính xác đến từng mm mang lại độ thẩm mỹ cao. Thiết kế
+              nâng màn hình và lens camera có viền bezels lên khỏi bề mặt phẳng
+              tránh bễ vỡ, trầy xước, hao mòn. Thiết kế vị trí xỏ dây
+              Duo-QuikCatch ở hai bên cạnh ốp giúp dễ dàng xỏ dây đeo tay hoặc
+              dây đeo cổ tiện dụng.
+            </p>
           </div>
         </div>
       </div>
@@ -381,10 +386,27 @@
                 </div>
               </div>
 
-              <!-- Submit Button -->
-              <button type="submit" class="btn btn-primary w-100">
-                Xác nhận đặt hàng
-              </button>
+              <!-- Tổng Tiền -->
+              <p class="text-end">
+                Tổng thanh toán: <span id="modalTotalPrice" class="text-danger fw-bold">0 đ</span>
+              </p>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Đóng
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="submitPayment()"
+            >
+              Xác Nhận Thanh Toán
+            </button>
             </form>
           </div>
         </div>
