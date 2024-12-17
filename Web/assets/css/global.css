@@ -3,6 +3,9 @@
   justify-content: center;
   gap: 50px;
 }
+.navbar-nav .nav-item:hover{
+  border-bottom: #ffffff 1px solid;
+}
 .marquee{
   overflow: hidden;
   white-space: nowrap;
